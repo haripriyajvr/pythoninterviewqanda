@@ -1,0 +1,12 @@
+A = input()
+B = input()
+word = ""
+for i in range(len(A)):
+    sub_A = A[i:]
+    if B.startswith(sub_A):
+        word += word + sub_A
+        break
+if word:
+    print(word)
+else:
+    print("No overlapping")
